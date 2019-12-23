@@ -55,35 +55,255 @@ settextstyle(2,0,7);
 	outtextxy(100,10,"\n\t\t\tSINDH MADRESSATUL ISLAM UNIVERSITY\n");
 	printf("\n\n\n\n");
 	setbkcolor(6);
-	printf("   ______________________________________________________________________________  \n");
-	printf("  ||       			STUDENT MARKSHEET	      	                ||\n");
-	printf("  ||Student Name      | %s	                     	                        ||\n",name);
-	printf("  ||Semester          | %s				                        ||\n",sec);
-	printf("  ||Section           | %s					                ||\n",sem);
-	printf("  ||Student Roll Num  | %s				                        ||\n",rollnum);
-	printf("  ||____________________________________________________________________________||\n");
-	printf("  ||Subject         | TOTAL  | PASSING |   Obt.Marks   |      STATUS    GPA     ||\n");
-	printf("  ||____________________________________________________________________________||\n");
+	printf("   ___________________________________________________________________________  \n");
+	printf("  ||       			STUDENT MARKSHEET	      	             ||\n");
+	printf("  ||Student Name      | %s	                     	                     ||\n",name);
+	printf("  ||Semester          | %s				                     ||\n",sec);
+	printf("  ||Section           | %s					             ||\n",sem);
+	printf("  ||Student Roll Num  | %s				                     ||\n",rollnum);
+	printf("  ||_________________________________________________________________________||\n");
+	printf("  ||Subject         | TOTAL  | PASSING |   Obt.Marks   |      STATUS    GPA  ||\n");
+	printf("  ||_________________________________________________________________________||\n");
      if(m1<50)
-       {printf("  ||ENGLISH         |  100   |   50    |      %d       |       fail          ||\n",m1);}
+       {printf("  ||ENGLISH         |  100   |   50    |      %d       |       fail     ",m1);
+       if(m1>=90 && m1<=100)
+       {printf("4.0 A+  ||\n");}
+       else if(m1>=80 && m1<=89)
+       {printf("3.66 A  ||\n");}
+       else if(m1>=75 && m1<=79)
+       {printf("3.33 B+  ||\n");}
+       else if(m1>=70 && m1<=74)
+       {printf("3.00 B  ||\n");}
+       else if(m1>=65 && m1<=69)
+       {printf("2.66 C+  ||\n");}
+       else if(m1>=60 && m1<=64)
+       {printf("2.33 C+  ||\n");}
+       else if(m1>=55 && m1<=59)
+      {printf("2.00 D+  ||\n");}
+       else if(m1>=50 && m1<=54)
+       {printf("1.66 D  ||\n");}
+       else if(m1>=45 && m1<=49)
+       {printf("1.33 E+  ||\n");}
+       else if (m1>=40 && m1<=44)
+      {printf("1.00 E  ||\n");}
+       else if(m1>=0 && m1<40)
+       {printf("0.0 F     ||\n");}}
 	else
-       {printf("  ||ENGLISH         |  100   |   50    |      %d       |       pass          ||\n",m1);}
+       {printf("  ||ENGLISH         |  100   |   50    |      %d       |       pass     ",m1);
+       if(m1>=90 && m1<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m1>=80 && m1<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m1>=75 && m1<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m1>=70 && m1<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m1>=65 && m1<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m1>=60 && m1<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m1>=55 && m1<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m1>=50 && m1<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m1>=45 && m1<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m1>=40 && m1<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m1>=0 && m1<40)
+       {printf("0.0 F     ||\n");}}
 	if(m2<50){
-	printf("  ||PROG-FUND       |  100   |   50    |      %d       |       fail          ||\n",m2);}
+	printf("  ||PROG-FUND       |  100   |   50    |      %d       |       fail     ",m2);
+       if(m2>=90 && m2<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m2>=80 && m2<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m2>=75 && m2<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m2>=70 && m2<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m2>=65 && m2<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m2>=60 && m2<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m2>=55 && m2<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m2>=50 && m2<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m2>=45 && m2<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m2>=40 && m2<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m2>=0 && m2<40)
+       {printf("0.0 F     ||\n");}}
 	else{
-	printf("  ||PROG-FUND       |  100   |   50    |      %d       |       Pass          ||\n",m2);}
+	printf("  ||PROG-FUND       |  100   |   50    |      %d       |       Pass     ",m2);
+       if(m2>=90 && m2<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m2>=80 && m2<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m2>=75 && m2<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m2>=70 && m2<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m2>=65 && m2<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m2>=60 && m2<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m2>=55 && m2<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m2>=50 && m2<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m2>=45 && m2<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m2>=40 && m2<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m2>=0 && m2<40)
+       {printf("0.0 F     ||\n");}}
 	if(m3<50){
-	printf("  ||CALCULAS        |  100   |   50    |      %d       |       fail          ||\n",m3);}
+	printf("  ||CALCULAS        |  100   |   50    |      %d       |       fail     ",m3);
+       if(m3>=90 && m3<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m3>=80 && m3<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m3>=75 && m3<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m3>=70 && m3<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m3>=65 && m3<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m3>=60 && m3<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m3>=55 && m3<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m3>=50 && m3<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m3>=45 && m3<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m3>=40 && m3<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m3>=0 && m3<40)
+       {printf("0.0 F     ||\n");}}
 	else{
-	printf("  ||CALCULAS        |  100   |   50    |      %d       |       pass          ||\n",m3);}
+	printf("  ||CALCULAS        |  100   |   50    |      %d       |       pass     ",m3);
+       if(m3>=90 && m3<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m3>=80 && m3<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m3>=75 && m3<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m3>=70 && m3<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m3>=65 && m3<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m3>=60 && m3<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m3>=55 && m3<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m3>=50 && m3<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m3>=45 && m3<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m3>=40 && m3<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m3>=0 && m3<40)
+       {printf("0.0 F     ||\n");}}
 	if(m4<50){
-	printf("  ||ICT             |  100   |   50    |      %d       |       fail          ||\n",m4);}
+	printf("  ||ICT             |  100   |   50    |      %d       |       fail     ",m4);
+       if(m4>=90 && m4<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m4>=80 && m4<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m4>=75 && m4<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m4>=70 && m4<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m4>=65 && m4<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m4>=60 && m4<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m4>=55 && m4<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m4>=50 && m4<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m4>=45 && m4<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m4>=40 && m4<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m4>=0 && m4<40)
+       {printf("0.0 F     ||\n");}}
 	else{
-	printf("  ||ICT             |  100   |   50    |      %d       |       Pass    	     ||\n",m4);}
-if(m5<50){
-	printf("  ||APP-PHYSICS     |  100   |   50    |      %d       |       fail          ||\n",m5);}
+	printf("  ||ICT             |  100   |   50    |      %d       |       Pass    	",m4);
+       if(m4>=90 && m4<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m4>=80 && m4<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m4>=75 && m4<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m4>=70 && m4<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m4>=65 && m4<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m4>=60 && m4<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m4>=55 && m4<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m4>=50 && m4<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m4>=45 && m4<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m4>=40 && m4<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m4>=0 && m4<40)
+       {printf("0.0 F     ||\n");}}
+        if(m5<50){
+	printf("  ||APP-PHYSICS     |  100   |   50    |      %d       |       fail     ",m5);
+       if(m5>=90 && m5<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m5>=80 && m5<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m5>=75 && m5<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m5>=70 && m5<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m5>=65 && m5<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m5>=60 && m5<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m5>=55 && m5<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m5>=50 && m5<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m5>=45 && m5<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m5>=40 && m5<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m5>=0 && m5<40)
+       {printf("0.0 F     ||\n");}}
 	else{
-	printf("  ||APP-PHYSICS     |  100   |   50    |      %d       |       pass          ||\n",m5);}
+	printf("  ||APP-PHYSICS     |  100   |   50    |      %d       |       pass     ",m5);
+       if(m5>=90 && m5<=100)
+       {printf("4.0 A+     ||\n");}
+       else if(m5>=80 && m5<=89)
+       {printf("3.66 A     ||\n");}
+       else if(m5>=75 && m5<=79)
+       {printf("3.33 B+     ||\n");}
+       else if(m5>=70 && m5<=74)
+       {printf("3.00 B     ||\n");}
+       else if(m5>=65 && m5<=69)
+       {printf("2.66 C+     ||\n");}
+       else if(m5>=60 && m5<=64)
+       {printf("2.33 C+     ||\n");}
+       else if(m5>=55 && m5<=59)
+      {printf("2.00 D+     ||\n");}
+       else if(m5>=50 && m5<=54)
+       {printf("1.66 D     ||\n");}
+       else if(m5>=45 && m5<=49)
+       {printf("1.33 E+     ||\n");}
+       else if (m5>=40 && m5<=44)
+      {printf("1.00 E     ||\n");}
+       else if(m5>=0 && m5<40)
+       {printf("0.0 F     ||\n");}}
 	printf("  ||_________________________________________________________________________||\n");
 	printf("  ||OBTAINED        |  %d                   	                    	     ||\n",obt);
 	printf("  ||PERCENTAGE      |  %.3f         	                           	     ||\n",per);
@@ -147,5 +367,3 @@ if(m5<50){
 	getch();
 	return 0;
        }
-
-
